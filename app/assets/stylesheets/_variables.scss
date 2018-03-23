@@ -1,0 +1,56 @@
+@import 'mixin';
+
+$black: #000;
+$white: #fff;
+
+$red: #d54c5d;
+
+$color-bodyText: $black;
+$color-primary: $red;
+$color-secondary: $black;
+
+// @font-face {
+//     font-family: 'Proxima Nova Lt';
+//     src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+//         url('../fonts/ProximaNova-Light.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Proxima Nova Bold';
+//     src: url('../ProximaNova-Bold.woff2') format('woff2'),
+//         url('../ProximaNova-Bold.woff') format('woff');
+//     font-weight: 700;
+//     font-style: normal;
+// }
+@include font-face("Proxima Nova Lt", "../fonts/ProximaNova-Light");
+
+@include font-face("Proxima Nova Bold", "../fonts/ProximaNova-Bold");
+
+@include font-face("Proxima Nova Cn Th", "../fonts/ProximaNovaCond-Extrabld");
+
+
+//FONT FAMILIES
+$font-base: 'Proxima Nova Lt', sans-serif;
+$font-base-bold: 'Proxima Nova Bold', sans-serif;
+$font-base-extrabold: 'Proxima Nova Cn Th', sans-serif;
+
+//FONT SIZES
+$fontSize-xsmall: 12px;
+$fontSize-small: 14px;
+$fontSize-base: 16px;
+$fontSize-large: 18px;
+$fontSize-larger: 24px;
+$fontSize-largest: 48px;
+
+$fontWeight-normal: 300;
+$fontWeight-semibold: 600;
+$fontWeight-bold: 700;
+
+//LINE HEIGHTS
+$lineHeight-stightest: 1.15;
+$lineHeight-tightest: 1.25;
+$lineHeight-tighter: 1.3;
+$lineHeight-tight: 1.4;
+$lineHeight-base: 1.6;

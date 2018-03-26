@@ -69,34 +69,13 @@ h1 {
 }
 h2 {
     position: relative;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
     font-size: $fontSize-larger;
     line-height: $lineHeight-stightest;
     font-weight: $fontWeight-normal;
     letter-spacing: 5px;
     @include breakpoint(large) {
-        font-size: $fontSize-largest; 
-        margin: 0 0 75px;       
-    }
-    &.h2--bordered {
-        &:after {
-            content: '';
-            display: inline-block;
-            border-bottom: solid 1px #efefef;
-            width: 100%;
-            position: absolute;
-            top: 30px;
-            margin-left: 30px;
-        }
-    }
-    .subheader {
-        display: block;
-        font-size: $fontSize-large;
-        letter-spacing: 1px;
-        margin-top: 20px;
-        @include breakpoint(large) {
-            font-size: $fontSize-larger;
-        }
+        font-size: $fontSize-largest;
     }
     span {
         color: $color-primary;
@@ -106,6 +85,17 @@ h3 {
     margin: 0 0 14px;
     font-size: $fontSize-large;
     line-height: $lineHeight-tighter;
+}
+.subheader {
+    display: block;
+    font-size: $fontSize-large;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px 0 30px;
+    @include breakpoint(large) {
+        font-size: $fontSize-larger;
+        margin: 0 0 75px; 
+    }
 }
 blockquote {
     margin: 1em 0;
